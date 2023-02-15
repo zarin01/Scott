@@ -98,6 +98,15 @@ $monochrome_onboarding_config = [
 				],
 			],
 		],
+		'above-nav-bar' => [
+			[
+				'type' => 'custom_html',
+				'args' => [
+					'title'   => '',
+					'content' => '<p>Hit the ground running with a minimalist look. <span class="footer-cta-button"><a class="button" href="#">Learn More</a></span></p>',
+				],
+			],
+		],
 	],
 	'navigation_menus' => [
 		'primary' => [

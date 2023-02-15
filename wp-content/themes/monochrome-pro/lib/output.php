@@ -1,10 +1,10 @@
 <?php
 /**
- * Monochrome Pro.
+ * 
  *
- * This file adds the required CSS to the front end to the Monochrome Pro Theme.
+ * This file adds the required CSS to the front end.
  *
- * @package Monochrome
+ * 
  * @author  StudioPress
  * @license GPL-2.0-or-later
  * @link    https://my.studiopress.com/themes/monochrome/

@@ -84,7 +84,7 @@ add_action( 'wp_enqueue_scripts', 'monochrome_enqueue_scripts_styles' );
  */
 function monochrome_enqueue_scripts_styles() {
 
-	wp_enqueue_style( 'monochrome-fonts', '//fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i|Open+Sans+Condensed:300', [], genesis_get_theme_version() );
+	wp_enqueue_style( 'monochrome-fonts', '//fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Work+Sans:ital,wght@0,400;1,300;1,400&display=swap', [], genesis_get_theme_version() );
 	wp_enqueue_style( 'monochrome-ionicons', '//unpkg.com/ionicons@4.1.2/dist/css/ionicons.min.css', [], genesis_get_theme_version() );
 
 	wp_enqueue_script( 'monochrome-global-script', get_stylesheet_directory_uri() . '/js/global.js', [ 'jquery' ], '1.0.0', true );
@@ -288,12 +288,45 @@ function monochrome_before_footer_cta() {
 	genesis_widget_area(
 		'before-footer-cta',
 		[
-			'before' => '<div class="before-footer-cta"><div class="wrap">',
+			'before' => 'Design by <a title="Steck Insights Chicago Colorado WordPress Web Designer" target="_blank" href="http://www.steckinsights.com/"><img src="https://www.steckinsights.com/wp-content/uploads/2019/02/steck-logo-white.png" alt="Steck Insights Web Design Logo" style="vertical-align: middle;" /></a>',
 			'after'  => '</div></div>',
 		]
 	);
 
 }
+
+add_action( 'genesis_header', 'monochrome_above_nav' );
+
+function monochrome_above_nav() {
+
+	genesis_widget_area(
+		'above-nav-bar',
+		[
+			'before' => 'Design by <a title="Steck Insights Chicago Colorado WordPress Web Designer" target="_blank" href="http://www.steckinsights.com/"><img src="https://www.steckinsights.com/wp-content/uploads/2019/02/steck-logo-white.png" alt="Steck Insights Web Design Logo" style="vertical-align: middle;" /></a>',
+			'after'  => '</div></div>',
+		]
+	);
+
+}
+
+
+
+// Do NOT include the opening php tag.
+
+// Remove site footer.
+remove_action( 'genesis_footer', 'genesis_footer_markup_open', 5 );
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
+
+// Customize site footer
+add_action( 'genesis_footer', 'sp_custom_footer' );
+function sp_custom_footer() { ?>
+
+	<div class="site-footer"><div class="wrap"><p>Handcrafted with <span class="dashicons dashicons-heart"></span> by moi. Powered by the <a href="https://www.studiopress.com/">Genesis Framework</a>. <a href="http://briangardner.com/contact/">Get in Touch</a>.</p></div></div>
+
+<?php
+}
+
 
 // Removes site footer.
 remove_action( 'genesis_footer', 'genesis_footer_markup_open', 5 );
@@ -322,11 +355,22 @@ function monochrome_custom_footer_logo() {
 
 }
 
+
+
+
+
 // Registers widget areas.
 genesis_register_sidebar(
 	[
 		'id'          => 'before-footer-cta',
 		'name'        => __( 'Before Footer CTA', 'monochrome-pro' ),
 		'description' => __( 'This is the before footer CTA section.', 'monochrome-pro' ),
+	]
+);
+genesis_register_sidebar(
+	[
+		'id'          => 'above-nav-bar',
+		'name'        => __( 'Above Nav Bar', 'monochrome-pro' ),
+		'description' => __( 'This is the above navbar CTA.', 'monochrome-pro' ),
 	]
 );
