@@ -286,11 +286,7 @@ add_action( 'genesis_before_footer', 'monochrome_before_footer_cta' );
 function monochrome_before_footer_cta() {
 
 	genesis_widget_area(
-		'before-footer-cta',
-		[
-			'before' => 'Design by <a title="Steck Insights Chicago Colorado WordPress Web Designer" target="_blank" href="http://www.steckinsights.com/"><img src="https://www.steckinsights.com/wp-content/uploads/2019/02/steck-logo-white.png" alt="Steck Insights Web Design Logo" style="vertical-align: middle;" /></a>',
-			'after'  => '</div></div>',
-		]
+		
 	);
 
 }
@@ -302,7 +298,7 @@ function monochrome_above_nav() {
 	genesis_widget_area(
 		'above-nav-bar',
 		[
-			'before' => 'Design by <a title="Steck Insights Chicago Colorado WordPress Web Designer" target="_blank" href="http://www.steckinsights.com/"><img src="https://www.steckinsights.com/wp-content/uploads/2019/02/steck-logo-white.png" alt="Steck Insights Web Design Logo" style="vertical-align: middle;" /></a>',
+			'before' => '',
 			'after'  => '</div></div>',
 		]
 	);
@@ -322,7 +318,7 @@ remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
 add_action( 'genesis_footer', 'sp_custom_footer' );
 function sp_custom_footer() { ?>
 
-	<div class="site-footer"><div class="wrap"><p>Handcrafted with <span class="dashicons dashicons-heart"></span> by moi. Powered by the <a href="https://www.studiopress.com/">Genesis Framework</a>. <a href="http://briangardner.com/contact/">Get in Touch</a>.</p></div></div>
+	<div class="site-footer"><div class="steck-logo" >Design by <a title="Steck Insights Chicago Colorado WordPress Web Designer" target="_blank" href="http://www.steckinsights.com/"><img src="https://www.steckinsights.com/wp-content/uploads/2019/02/steck-logo-white.png" alt="Steck Insights Web Design Logo" style="vertical-align: middle;" /></a></div></div>
 
 <?php
 }

@@ -307,7 +307,7 @@ h4 {
 	font-size: 20px;
 }
 
-.entry-content h2,
+
 .entry-content h3,
 .entry-content h4 {
 	margin-bottom: 20px;
@@ -1675,6 +1675,17 @@ float: right;
 /* Content Area
 ---------------------------------------------------------------------------- */
 
+.link-heading {
+    max-height: 90px;
+	min-height: 75px;
+	height: auto;
+	margin-bottom: 5px;
+}
+
+.page-link-btn {
+	display: grid;
+}
+
 /* Entries
 --------------------------------------------- */
 
@@ -2041,7 +2052,7 @@ p.entry-meta {
 	line-height: 1;
 	padding-bottom: 40px;
 	padding-top: 40px;
-	position: fixed;
+	position: relative;
 	text-align: center;
 	width: 100%;
 	height: auto;

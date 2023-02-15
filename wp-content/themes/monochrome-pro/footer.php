@@ -24,14 +24,14 @@ genesis_markup(
  *
  * @since 1.0.0
  */
-do_action( 'genesis_before_footer' );
+
 
 /**
  * Fires to display the main footer content.
  *
  * @since 1.0.1
  */
-do_action( 'genesis_footer' );
+
 
 /**
  * Fires immediately after the `genesis_footer` action hook, before the site container closing markup.
