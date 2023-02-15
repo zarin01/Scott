@@ -25,6 +25,7 @@ do_action( 'genesis_doctype' );
  */
 do_action( 'genesis_title' );
 
+
 /**
  * Fires immediately after `genesis_title` action hook, in header.php to render the meta elements.
  *

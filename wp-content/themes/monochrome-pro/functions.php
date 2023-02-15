@@ -291,14 +291,14 @@ function monochrome_before_footer_cta() {
 
 }
 
-add_action( 'genesis_header', 'monochrome_above_nav' );
+add_action( 'genesis_before_header', 'monochrome_above_nav' );
 
 function monochrome_above_nav() {
 
 	genesis_widget_area(
 		'above-nav-bar',
 		[
-			'before' => '',
+			'before' => '<div><div class="widget-area above-nav-bar">',
 			'after'  => '</div></div>',
 		]
 	);
@@ -374,16 +374,3 @@ genesis_register_sidebar(
 
 
 
-function my_login_logo() { ?>
-	<style type=”text/css”>
-	#login h1 a, .login h1 a {
-	background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/login-logo.png);
-	height:65px;
-	width:320px;
-	background-size: 320px 65px;
-	background-repeat: no-repeat;
-	padding-bottom: 30px;
-	}
-	</style>
-	<?php }
-	add_action( 'login_enqueue_scripts', 'my_login_logo' );

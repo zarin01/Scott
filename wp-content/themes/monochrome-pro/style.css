@@ -1355,24 +1355,27 @@ figcaption,
 
 /* Heading CTA Widget */
 ---------------------------------------------------------------------------- */
-.heading-cta{
-	background-color: #435B5B;
-	color: white;
+.above-navbar, .above-nav-bar, .widget-area.above-nav-bar{
+	background-color: #435B5B !important;
+	color: white !important;
+	display: flex;
+	font-size: small;
 }
- /*
-.heading-cta-left{
+
+.above-navbar-left{
 	float: left;
 }
 
-
-.heading-cta-middle{
-float: left;
+.above-navbar-middle{
+	float: left;
+	margin-left: 20px;
 }
 
-
-.heading-cta-right{
-float: right;
+.above-navbar-right{
+	float: right;
+	margin-left: 20px;
 }
+ 
 /* Site Navigation
 ---------------------------------------------------------------------------- */
 
