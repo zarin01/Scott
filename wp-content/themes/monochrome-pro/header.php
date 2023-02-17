@@ -10,7 +10,9 @@
  * @license GPL-2.0-or-later
  * @link    https://my.studiopress.com/themes/genesis/
  */
-
+?>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<?php
 /**
  * Fires at start of header.php, immediately before `genesis_title` action hook to render the Doctype content.
  *
