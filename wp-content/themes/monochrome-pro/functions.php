@@ -305,6 +305,20 @@ function monochrome_above_nav() {
 
 }
 
+add_action( 'genesis_sidebar', 'post_widget_sidebar' );
+
+function post_widget_sidebar() {
+
+	genesis_widget_area(
+		'post-sidebar',
+		[
+			'before' => '<div><div class="post-sidebar">',
+			'after'  => '</div></div>',
+		]
+	);
+
+}
+
 
 
 // Do NOT include the opening php tag.
@@ -368,6 +382,11 @@ genesis_register_sidebar(
 		'id'          => 'above-nav-bar',
 		'name'        => __( 'Above Nav Bar', 'monochrome-pro' ),
 		'description' => __( 'This is the above navbar CTA.', 'monochrome-pro' ),
+	],
+	[
+		'id'          => 'post-sidebar',
+		'name'        => __( 'Posts Sidebar', 'monochrome-pro' ),
+		'description' => __( 'This sidebars goes on the side of posts', 'monochrome-pro' ),
 	]
 );
 
