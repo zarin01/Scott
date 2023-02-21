@@ -192,6 +192,11 @@ textarea:focus,
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
+.gb-button-size-small {
+	width: 125px;
+    height: 50px;
+}
+
 a {
 	text-decoration: none;
 }
@@ -308,11 +313,6 @@ h4 {
 }
 
 
-.entry-content h3,
-.entry-content h4 {
-	margin-bottom: 20px;
-	margin-top: 40px;
-}
 
 h5 {
 	font-size: 18px;
@@ -1266,7 +1266,7 @@ figcaption,
 
 .site-header {
 	background: rgb(246,246,246);
-	background: linear-gradient(0deg, rgba(246,246,246,1) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(0deg, rgb(223 223 223) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
 	border-bottom: 1px solid transparent;
 	min-height: 80px;
 	padding: 10px 40px;
@@ -1572,7 +1572,7 @@ a.sf-with-ul:hover{
 
 .nav-primary .genesis-nav-menu .sub-menu li:last-child a {
 	border-bottom: none;
-	color: #44ada9;
+	
 }
 
 .nav-primary .genesis-nav-menu .sub-menu a:focus,
@@ -1746,6 +1746,24 @@ a.sf-with-ul:hover{
 .page-link-btn {
 	display: grid;
 }
+
+/* Home Page
+---------------------------------------------------------------------------- */
+.home-court-order, .medical-treatment-home{
+	border-top: #44ada9 10px solid;
+}
+.online-service-home{
+	border-top: #A2CF55 10px solid;
+}
+
+.outpatient-service-home{
+	border-top: #E1B815 10px solid;
+}
+
+a.gb-button.gb-button-shape-square.gb-button-size-small {
+    border: #44ada9 2px solid;
+}
+
 
 /* Entries
 --------------------------------------------- */
