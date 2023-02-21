@@ -1764,6 +1764,22 @@ a.gb-button.gb-button-shape-square.gb-button-size-small {
     border: #44ada9 2px solid;
 }
 
+li.has-large-font-size.wp-block-navigation-item.has-child.open-on-hover-click.question-menu-item.wp-block-navigation-submenu {
+    background-color: white;
+    width: 1000px;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+
+}
+
+button.wp-block-navigation__submenu-icon.wp-block-navigation-submenu__toggle {
+    display: inline-flex;
+    float: right;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+}
 
 /* Entries
 --------------------------------------------- */
