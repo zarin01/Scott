@@ -343,6 +343,7 @@ video,
 	max-width: 100%;
 }
 
+
 img {
 	height: auto;
 }
@@ -1780,6 +1781,15 @@ a.sf-with-ul:hover{
 
 .schedule-btn a{
 	padding: 15px;
+}
+
+.schedule-iframe{
+	overflow-y: hidden;
+	height: 3600px;
+}
+
+.gb-testimonial-name{
+	color: #44ada9 !important;
 }
 
 /* Home Page
