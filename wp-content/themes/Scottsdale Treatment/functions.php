@@ -293,7 +293,11 @@ add_action( 'genesis_before_footer', 'monochrome_before_footer_cta' );
 function monochrome_before_footer_cta() {
 
 	genesis_widget_area(
-		
+		'before-footer-cta',
+		[
+			'before' => '<div class="before-footer-cta"><div class="wrap">',
+			'after'  => '</div></div>',
+		]
 	);
 
 }

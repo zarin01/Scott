@@ -26,11 +26,19 @@ genesis_markup(
  */
 
 
+
+//do_action( 'genesis_before_footer' );
+
 /**
  * Fires to display the main footer content.
  *
  * @since 1.0.1
  */
+
+
+
+ 
+//do_action( 'genesis_footer' );
 
 
 /**
