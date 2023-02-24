@@ -1203,9 +1203,7 @@ figcaption,
 /* Gravity Forms
 --------------------------------------------- */
 
-div#input_2_1, .ginput_container {
-    border: black 1px solid;
-}
+
 
 .gform_button button, .gform_button input[type="submit"], .gform_button  {
 	background-color: #44ada9 !important;
@@ -1791,6 +1789,17 @@ a.sf-with-ul:hover{
 .gb-testimonial-name{
 	color: #44ada9 !important;
 }
+
+.company-information{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+#phone-icon, #email-icon, #address-icon, #pencil-icon{
+	color: #000 !important;
+}
+
+
 
 /* Home Page
 ---------------------------------------------------------------------------- */

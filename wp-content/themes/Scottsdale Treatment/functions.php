@@ -46,6 +46,13 @@ require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.p
 // Includes notice to install Genesis Connect for WooCommerce.
 require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php';
 
+//Font Awesome Icons
+function icons_enqueue_styles() {
+	wp_enqueue_style( 'icons', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
+	}
+	
+add_action('wp_enqueue_scripts', 'icons_enqueue_styles');
+
 add_action( 'after_setup_theme', 'monochrome_theme_support', 1 );
 /**
  * Add desired theme supports.
