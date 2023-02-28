@@ -27,7 +27,7 @@ genesis_markup(
 
 
 
-//do_action( 'genesis_before_footer' );
+do_action( 'genesis_before_footer' );
 
 /**
  * Fires to display the main footer content.
